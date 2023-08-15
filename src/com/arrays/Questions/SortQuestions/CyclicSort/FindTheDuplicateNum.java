@@ -15,8 +15,7 @@ public class FindTheDuplicateNum {
                 i++;
             }
         }
-
-        // After sorting the arr we will search the duplicate number
+        // After sorting the array the duplicate number will come at the first position
         return arr[0];
     }
 
