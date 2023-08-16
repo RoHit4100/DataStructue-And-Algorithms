@@ -1,4 +1,4 @@
-package com.simple;
+package com.Simple;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
