@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e6f19f7-1678-4f9d-b266-d4e485250367" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/FindDuplicateNumKunalMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/FindAllDuplicatesInArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/SetMismatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/simple/PalindromeString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/FindTheDuplicateNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/FindTheDuplicateNum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/FirstMissingPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/FirstMissingPositive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/simple/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/simple/PalindromeNum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,14 +131,19 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/FindDisappearedNumbers.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/simple/Fibonacci.java</url>
           <line>13</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/FindAllDuplicatesInArray.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/SetMismatch.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
