@@ -5,54 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e6f19f7-1678-4f9d-b266-d4e485250367" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Fibonacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SelfSolveQue/MedianOfTwoSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Patterns/StarPatternRevTriangleWithNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Patterns/StartPatternRevTriangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/ConvertingNegativeToPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/ConvertingNegativeToPositive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/InputAndOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/InputAndOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SearchQuestions/binarySearch/CeilingProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SearchQuestions/binarySearch/CeilingProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SearchQuestions/binarySearch/CeilingProblemWithCharArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SearchQuestions/binarySearch/CeilingProblemWithCharArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SearchQuestions/binarySearch/FindMinInDuplicateRotatedArr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SearchQuestions/binarySearch/FindMinInDuplicateRotatedArr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SearchQuestions/binarySearch/FindTheFirstIndexOfTargetElementInMountainArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SearchQuestions/binarySearch/FindTheFirstIndexOfTargetElementInMountainArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SearchQuestions/binarySearch/FirstAndLastPositionOfElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SearchQuestions/binarySearch/FirstAndLastPositionOfElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SearchQuestions/binarySearch/FloorNumProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SearchQuestions/binarySearch/FloorNumProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SearchQuestions/binarySearch/InfiniteLengthArraySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SearchQuestions/binarySearch/InfiniteLengthArraySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SearchQuestions/binarySearch/PeakIndexOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SearchQuestions/binarySearch/PeakIndexOfArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SearchQuestions/binarySearch/RotatedArraySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SearchQuestions/binarySearch/RotatedArraySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SearchQuestions/binarySearch/RotationCountOfRotatedArr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SearchQuestions/binarySearch/RotationCountOfRotatedArr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SearchQuestions/binarySearch/SearchIn2DArrayRowAndColSorted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SearchQuestions/binarySearch/SearchIn2DArrayRowAndColSorted.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SearchQuestions/binarySearch/SearchInStrictlySorted2DArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SearchQuestions/binarySearch/SearchInStrictlySorted2DArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SearchQuestions/linearSearch/FindEvenDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SearchQuestions/linearSearch/FindEvenDigits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/FindAllDuplicatesInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SortQuestions/CyclicSort/FindAllDuplicatesInArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/FindDisappearedNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SortQuestions/CyclicSort/FindDisappearedNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/FindDuplicateNumKunalMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SortQuestions/CyclicSort/FindDuplicateNumKunalMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/FindTheDuplicateNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SortQuestions/CyclicSort/FindTheDuplicateNum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/FirstMissingNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SortQuestions/CyclicSort/FirstMissingNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/FirstMissingPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SortQuestions/CyclicSort/FirstMissingPositive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/Questions/SortQuestions/CyclicSort/SetMismatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SortQuestions/CyclicSort/SetMismatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/searchAlgorithms/binarySearch/BinarySearchASC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/SearchAlgorithms/binarySearch/BinarySearchASC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/searchAlgorithms/binarySearch/BinarySearchDES.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/SearchAlgorithms/binarySearch/BinarySearchDES.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/searchAlgorithms/binarySearch/OrderAgnostic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/SearchAlgorithms/binarySearch/OrderAgnostic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/searchAlgorithms/linearSearch/LinearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/SearchAlgorithms/linearSearch/LinearSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/searchAlgorithms/linearSearch/LinearSearchIn2DArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/SearchAlgorithms/linearSearch/LinearSearchIn2DArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/searchAlgorithms/linearSearch/LinearSearchInRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/SearchAlgorithms/linearSearch/LinearSearchInRange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/searchAlgorithms/linearSearch/LinearSearchString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/SearchAlgorithms/linearSearch/LinearSearchString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/searchAlgorithms/linearSearch/SearchMinAndMaxIn2DArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/SearchAlgorithms/linearSearch/SearchMinAndMaxIn2DArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/searchAlgorithms/linearSearch/SearchMinAndMaxNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/SearchAlgorithms/linearSearch/SearchMinAndMaxNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/sortingAlgorithms/bubbleSort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/SortingAlgorithms/bubbleSort/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/sortingAlgorithms/cyclicSort/CyclicSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/SortingAlgorithms/cyclicSort/CyclicSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/sortingAlgorithms/insertionSort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/SortingAlgorithms/insertionSort/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arrays/sortingAlgorithms/selectionSort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Arrays/SortingAlgorithms/selectionSort/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/simple/ArmstrongNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/ArmstrongNum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/simple/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/simple/CountingRepeatingNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/CountingRepeatingNum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/simple/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/Fibonacci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/simple/First.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/First.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/simple/PalindromeNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/PalindromeNum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/simple/PalindromeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/PalindromeString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/simple/PrimeNumMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/PrimeNumMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/simple/PrimeNumWithIterative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/PrimeNumWithIterative.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/simple/ReverseNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/ReverseNum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Simple/PrimeNumMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/PrimeNumMethod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +33,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: -1
+  &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2SxuvNfpT0LawSYditVcnRi01Bl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -94,6 +50,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/D/DataStructure&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
 }</component>
@@ -145,7 +102,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/Simple/PrimeNumMethod.java</url>
           <line>10</line>
-          <properties class="com.Simple.PrimeNumMethod" method="checkPrime">
+          <properties class="com.Simple.PrimeNumMethod">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -186,6 +143,16 @@
           <url>file://$PROJECT_DIR$/src/com/Arrays/Questions/SortQuestions/CyclicSort/SetMismatch.java</url>
           <line>10</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/Arrays/Questions/SelfSolveQue/MedianOfTwoSortedArray.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/Patterns/StartPatternRevTriangle.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

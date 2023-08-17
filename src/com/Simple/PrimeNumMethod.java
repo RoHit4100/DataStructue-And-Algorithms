@@ -7,19 +7,20 @@ public class PrimeNumMethod {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         System.out.println(checkPrime(n));
+        sc.close();
     }
-    static boolean checkPrime(int n){
-        if (n <= 1){
+
+    static boolean checkPrime(int n) {
+        if (n <= 1) {
             return false;
         }
         int i = 2;
-        while(i * i < n){
-            if (n % i == 0){
+        while (i * i < n) {
+            if (n % i == 0) {
                 return false;
             }
             i++;
         }
         return i * i > n;
     }
-
 }
