@@ -1,6 +1,6 @@
 package com.Patterns;
 
-public class StartPatternRevTriangle {
+public class StarPatternRevTriangle {
     public static void main(String[] args) {
         printPattern(7);
     }

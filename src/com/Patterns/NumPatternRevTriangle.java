@@ -1,6 +1,6 @@
 package com.Patterns;
 
-public class StarPatternRevTriangleWithNum {
+public class NumPatternRevTriangle {
     public static void main(String[] args) {
         printPatterWithNum(5);
     }

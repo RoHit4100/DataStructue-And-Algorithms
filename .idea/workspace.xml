@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e6f19f7-1678-4f9d-b266-d4e485250367" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/Arrays/Questions/SelfSolveQue/MedianOfTwoSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Patterns/StarPatternRevTriangleWithNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Patterns/StartPatternRevTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Patterns/NumPatternOriginalTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Patterns/NumPatternSquareLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Patterns/StarPatternArrow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Patterns/StarPatternDiamond.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Simple/PrimeNumMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/PrimeNumMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Patterns/StarPatternRevTriangleWithNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Patterns/NumPatternRevTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Patterns/StartPatternRevTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Patterns/StarPatternRevTriangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +152,7 @@
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/Patterns/StartPatternRevTriangle.java</url>
+          <url>file://$PROJECT_DIR$/src/com/Patterns/StarPatternRevTriangle.java</url>
           <line>9</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
