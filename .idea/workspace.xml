@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e6f19f7-1678-4f9d-b266-d4e485250367" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/Patterns/NumPatternOriginalTriangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Patterns/NumPatternSquareLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Patterns/StarPatternArrow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Patterns/StarPatternDiamond.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/BinarySearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Patterns/StarPatternRevTriangleWithNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Patterns/NumPatternRevTriangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Patterns/StartPatternRevTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Patterns/StarPatternRevTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Patterns/NumPatternSquareLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Patterns/NumPatternSquareLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Simple/ArmstrongNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/ArmstrongNum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,17 +42,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/D/DataStructure&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/D/DataStructure",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.Simple.Fibonacci" />
@@ -97,6 +95,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

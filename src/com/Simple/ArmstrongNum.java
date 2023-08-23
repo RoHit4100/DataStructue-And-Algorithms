@@ -9,13 +9,14 @@ public class ArmstrongNum {
         int n = sc.nextInt();
         System.out.println(checkArmstrong(n));
     }
-    static boolean checkArmstrong(int n){
+
+    static boolean checkArmstrong(int n) {
         int original = n;
         int sum = 0;
-        while(n > 0){
+        while (n > 0) {
             int rem = n % 10;
-//            sum = sum + (rem*rem*rem);
-            sum += (int)(Math.pow(rem, 3));
+            // sum = sum + (rem*rem*rem);
+            sum += (int) (Math.pow(rem, 3));
             n /= 10;
         }
         return sum == original;

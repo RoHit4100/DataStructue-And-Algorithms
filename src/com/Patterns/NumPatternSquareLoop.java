@@ -7,7 +7,7 @@ public class NumPatternSquareLoop {
 
     static void printPattern(int n) {
         int original = n;
-        n = 2 * n ;
+        n = 2 * n;
         System.out.println();
         for (int i = 1; i < n; i++) {
             // Now we have to find out the content in the columns
