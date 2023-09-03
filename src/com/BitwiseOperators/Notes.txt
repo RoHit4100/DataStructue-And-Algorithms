@@ -1,0 +1,44 @@
+AND operator => both needs to be true
+    Note: If any number is & with 1 that number will remain same.
+        eg,  100010011011
+            &
+            111111111111
+        ans, 100010011011
+
+XOR operator => if and only if(symbol == ^)
+    means only one of those number should be true.
+    eg, a^1 => complement of a.
+        means if any number XOR with the 1 it will give the complement of that number.
+        a^0 => a
+        a^a => 0
+
+Binary numbers:
+    (1) Binary:
+        0   000
+        1   001
+        2   010
+        3   011
+        4   100
+        5   101
+        6   110
+        7   111
+
+Conversion methods:
+    Convert any decimal number to any base B(can be 2, 8, 16)
+        keep deviding by base, take reminders and write those reminders from opposite directions.
+
+    Convert any base B to decimal
+        multiply and add the power of the base with the digit
+
+Left Shift operator => shifts the all bits in left side, means one 0 is added at the end.(symbol <<)
+    eg,   (10) = (1010) << 1 or 10 << 1
+    ans,  10100 all the elements will be shifted to the left side and 0 is added to the end.
+    Note: It is doubling the number by 2 for every shift, a << 1 = 2a
+          ie. general part is, a << b = a * 2^b
+          
+Right Shift operator => shifts all the bits in right side, means last bit is ignored.(symbol >>)
+    eg,  10101 >> 1
+    ans, 1010
+    Note: It is deviding the number by 2. a >> 1 = a/2
+          ie. general part is, a >> b = a / 2^b
+          
