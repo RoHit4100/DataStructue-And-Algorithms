@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e6f19f7-1678-4f9d-b266-d4e485250367" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/FindIthBitValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/FindNIsPowerOfTwoOrNot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/FindPowerOfNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/FindSetBIts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/FindUniqueNumberInArr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/MagicNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/NoOfDigitsInBaseB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Simple/RemoveZeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/Quetions/FlipImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/XORFrom0toA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/BitwiseOperators/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/Notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/BitwiseOperators/OddOrEven.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/BitwiseOperators/OddOrEven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/OddOrEven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/BitwiseOperators/FindSetBIts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/FindSetBIts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

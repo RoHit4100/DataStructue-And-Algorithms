@@ -2,8 +2,8 @@ package com.BitwiseOperators;
 
 public class FindSetBIts {
     public static void main(String[] args) {
-        System.out.println(Integer.toBinaryString(4));
-        System.out.println(findTotalSetBits(4));
+        System.out.println(Integer.toBinaryString(3));
+        System.out.println(findTotalSetBits(3));
     }
 
     static int findTotalSetBits(int n) {
