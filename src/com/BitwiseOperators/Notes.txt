@@ -7,7 +7,7 @@ AND operator => both needs to be true
 
 XOR operator => if and only if(symbol == ^)
     means only one of those number should be true.
-    eg, a^1 => complement of a.
+    eg, a^1 => complement of a
         means if any number XOR with the 1 it will give the complement of that number.
         a^0 => a
         a^a => 0
@@ -25,7 +25,7 @@ Binary numbers:
 
 Conversion methods:
     Convert any decimal number to any base B(can be 2, 8, 16)
-        keep deviding by base, take reminders and write those reminders from opposite directions.
+        keep dividing by base, take reminders and write those reminders from opposite directions.
 
     Convert any base B to decimal
         multiply and add the power of the base with the digit
@@ -34,11 +34,14 @@ Left Shift operator => shifts the all bits in left side, means one 0 is added at
     eg,   (10) = (1010) << 1 or 10 << 1
     ans,  10100 all the elements will be shifted to the left side and 0 is added to the end.
     Note: It is doubling the number by 2 for every shift, a << 1 = 2a
-          ie. general part is, a << b = a * 2^b
+          i.e. general part is, a << b = a * 2^b
           
 Right Shift operator => shifts all the bits in right side, means last bit is ignored.(symbol >>)
     eg,  10101 >> 1
     ans, 1010
-    Note: It is deviding the number by 2. a >> 1 = a/2
-          ie. general part is, a >> b = a / 2^b
-          
+    Note: It is dividing the number by 2. a >> 1 = a/2
+          i.e. general part is, a >> b = a / 2^b
+
+Formula to find the range for n bits,
+    -2^n-1 to 2^n-1 - 1
+

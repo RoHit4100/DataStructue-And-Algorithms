@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e6f19f7-1678-4f9d-b266-d4e485250367" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/FindIthBitValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/FindNIsPowerOfTwoOrNot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/FindPowerOfNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/FindSetBIts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/FindUniqueNumberInArr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/MagicNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/NoOfDigitsInBaseB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Simple/RemoveZeros.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Patterns/NumPatternSquareLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Patterns/NumPatternSquareLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Simple/ArmstrongNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/ArmstrongNum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/BitwiseOperators/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/Notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/BitwiseOperators/OddOrEven.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/BitwiseOperators/OddOrEven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/OddOrEven.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +50,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/D/DataStructure",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/D/DataStructure&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.maddyhome.idea.vim.ui.VimEmulationConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.Simple.Fibonacci" />
@@ -110,6 +118,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/Simple/RemoveZeros.java</url>
+          <line>11</line>
+          <properties class="com.Simple.RemoveZeros" method="remove">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/Arrays/SearchAlgorithms/binarySearch/OrderAgnostic.java</url>

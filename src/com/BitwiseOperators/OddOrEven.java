@@ -1,3 +1,5 @@
+package com.BitwiseOperators;
+
 public class OddOrEven{
     public static void main(String[] args){
         boolean isOdd = find(1);
