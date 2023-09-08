@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e6f19f7-1678-4f9d-b266-d4e485250367" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/FindArrayIsSortedOrNot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/LinearSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/NumberOfStepsToMakeNoZero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/RotatedBinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/StarPattern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Recursion/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/BinarySearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
