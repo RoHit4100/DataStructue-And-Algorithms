@@ -1,4 +1,4 @@
-package com.Recursion;
+package com.Recursion.Questions;
 
 public class BinarySearch {
     public static void main(String[] args) {

@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e6f19f7-1678-4f9d-b266-d4e485250367" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/Quetions/SeiveOfErosthenesToFindPrime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/CheckNoOfZeros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/FactorialOfN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/PalindromeString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/ProductOfDigit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/ReverseNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/SumOfDigits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/SumOfN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/FindArrayIsSortedOrNot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/LinearSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/NumberOfStepsToMakeNoZero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/RotatedBinarySearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Simple/PrimeNumMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/PrimeNumMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Recursion/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/BinarySearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
