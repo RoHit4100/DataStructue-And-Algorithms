@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e6f19f7-1678-4f9d-b266-d4e485250367" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/Quetions/FlipImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/XORFrom0toA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/Quetions/SeiveOfErosthenesToFindPrime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/CheckNoOfZeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/FactorialOfN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/PalindromeString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/ProductOfDigit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/ReverseNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/SumOfDigits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/SumOfN.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/BitwiseOperators/FindSetBIts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/FindSetBIts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Simple/PrimeNumMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Simple/PrimeNumMethod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,15 +110,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/com/Simple/PrimeNumMethod.java</url>
-          <line>10</line>
-          <properties class="com.Simple.PrimeNumMethod">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/Simple/RemoveZeros.java</url>
           <line>11</line>
           <properties class="com.Simple.RemoveZeros" method="remove">
@@ -165,6 +163,11 @@
           <url>file://$PROJECT_DIR$/src/com/Patterns/StarPatternRevTriangle.java</url>
           <line>9</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/Simple/PrimeNumMethod.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
