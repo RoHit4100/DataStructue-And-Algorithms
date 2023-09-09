@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e6f19f7-1678-4f9d-b266-d4e485250367" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Arrays/QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Strings/RemoveAFromString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Recursion/Questions/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Arrays/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Recursion/Questions/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Arrays/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Recursion/Questions/FindArrayIsSortedOrNot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Arrays/FindArrayIsSortedOrNot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Recursion/Questions/LinearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Arrays/LinearSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Recursion/Questions/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Arrays/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Recursion/Questions/MergeSortInPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Arrays/MergeSortInPlace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Recursion/Questions/NumberOfStepsToMakeNoZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Arrays/NumberOfStepsToMakeNoZero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Recursion/Questions/RotatedBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Arrays/RotatedBinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Recursion/Questions/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Arrays/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Recursion/Questions/Strings/RemoveAFromString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Strings/RemoveAFromString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
