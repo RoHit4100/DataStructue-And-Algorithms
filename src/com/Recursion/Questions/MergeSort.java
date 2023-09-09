@@ -23,7 +23,6 @@ public class MergeSort {
         int mid = arr.length / 2;
         int[] left = mergeSort(Arrays.copyOfRange(arr, 0, mid));
         int[] right = mergeSort(Arrays.copyOfRange(arr, mid, arr.length));
-
         return merge(left, right);
     }
 
@@ -33,14 +32,18 @@ public class MergeSort {
         int j = 0;
         int k = 0;
         // To compare elements from the both array, if element is smaller than the element of other array add that element to new array.
+        // We will check and add elements until one array is completed.
         while (i < first.length && j < second.length) {
             if (first[i] < second[j]) {
+                // If element of first array is smaller than the element of second array then we will add that element into mix and move
+                // i --> i + 1;
                 mix[k] = first[i];
                 i++;
             } else if (first[i] > second[j]) {
                 mix[k] = second[j];
                 j++;
             }
+            // after every step we are adding one element into mix.
             k++;
         }
         // After finishing one of the array all element of remaining array will be added to the new array.
