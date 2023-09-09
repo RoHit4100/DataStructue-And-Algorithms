@@ -1,4 +1,4 @@
-package com.Recursion.Questions;
+package com.Recursion.Questions.Arrays;
 
 public class RotatedBinarySearch {
     public static void main(String[] args) {

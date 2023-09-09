@@ -1,4 +1,4 @@
-package com.Recursion.Questions;
+package com.Recursion.Questions.Arrays;
 
 import java.util.Arrays;
 
