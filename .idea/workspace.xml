@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e6f19f7-1678-4f9d-b266-d4e485250367" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Strings/SkipEntireString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Strings/SubSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Strings/SubSequenceWithArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Strings/SubSequenceWithAsciiValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Simple/GetASCIIValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Recursion/Questions/Strings/SkipEntireString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Recursion/Questions/Strings/SkipEntireString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +107,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/Recursion/Questions/Strings/SubSequenceWithArrayList.java</url>
+          <line>9</line>
+          <properties class="com.Recursion.Questions.Strings.SubSequenceWithArrayList" method="findSubSequence">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/Arrays/SearchAlgorithms/binarySearch/OrderAgnostic.java</url>

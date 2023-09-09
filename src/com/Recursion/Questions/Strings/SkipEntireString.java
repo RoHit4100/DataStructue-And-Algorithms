@@ -4,6 +4,7 @@ public class SkipEntireString {
     public static void main(String[] args) {
         System.out.println(skipApple("I like to eat apple"));
         System.out.println(skipAppNotApple("I like to eat apples but I dont like other app"));
+
     }
 
     static String skipApple(String string) {
