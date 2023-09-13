@@ -1,11 +1,10 @@
 package com.Recursion.Questions.Strings;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class SubSequence {
     public static void main(String[] args) {
-        findSubSequence("", "abc");
+        findSubSequence2("abc", new ArrayList<>());
     }
 
     static void findSubSequence(String newString, String givenString) {
@@ -18,10 +17,14 @@ public class SubSequence {
         findSubSequence(newString, givenString.substring(1));
     }
 
-    static ArrayList<String> findSubSequence2(String newString, String givenString, ArrayList<String> list) {
+    static ArrayList<String> findSubSequence2(String givenString, ArrayList<String> list) {
         if (givenString.isEmpty()) {
-            list.add(newString);
+            list.add("");
         }
+
+        char ch = givenString.charAt(0);
+        findSubSequence(ch + "", givenString.substring(1));
+        findSubSequence("", givenString.substring(1));
         return list;
     }
 }
