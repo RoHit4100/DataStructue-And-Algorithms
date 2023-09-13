@@ -1,6 +1,7 @@
 package com.RecursionToIteration;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class SumOfSubSetWithDuplicates {
@@ -13,6 +14,7 @@ public class SumOfSubSetWithDuplicates {
     }
 
     static List<List<Integer>> getTheSubsetWithDuplicates(int[] arr) {
+        Arrays.sort(arr);
         List<List<Integer>> outer = new ArrayList<>();
         // First we will add an empty string into the list,
         outer.add(new ArrayList<>());
