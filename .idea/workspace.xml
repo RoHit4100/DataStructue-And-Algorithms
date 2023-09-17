@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e6f19f7-1678-4f9d-b266-d4e485250367" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/Backtracking/Questions/NKnightsCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Backtracking/Questions/NKnightsDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Backtracking/Questions/NQueen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Backtracking/Questions/NQueenCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Backtracking/Questions/NQueenCountSolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Backtracking/Questions/SudokuSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/BitwiseOperators/Quetions/SeiveOfErosthenesToFindPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/BitwiseOperators/Quetions/SeiveOfErosthenesToFindPrime.java" afterDir="false" />
-    </list>
+    <list default="true" id="1e6f19f7-1678-4f9d-b266-d4e485250367" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
