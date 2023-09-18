@@ -51,5 +51,7 @@ final class ExampleOfFinal{
 ////    }
 //}
 public class WhatIsFinalKeyword {
-
+    // Final variables always need to initialize;
+        final int a = 10;
+        static int b;
 }
