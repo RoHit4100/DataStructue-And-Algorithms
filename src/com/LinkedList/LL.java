@@ -152,6 +152,9 @@ public class LL {
     private Node get(int index) {
         Node temp = head;
         for (int i = 1; i <= index; i++) {
+            // Note: here temp is not changing the structure of the object
+            // if temp.next = next ---> only this means structure of the object is changing, this also known as reassigning.
+            // here this is not case.
             temp = temp.next;
         }
         return temp;
