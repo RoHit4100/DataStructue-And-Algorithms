@@ -17,6 +17,8 @@ public class MainForDLL {
 //        list.insertAfter(56, 67);
         list.insertAfter(78, 33);
         list.display();
-        list.displayRev();
+//        list.displayRev();
+        System.out.println(list.delete(56));
+        list.display();
     }
 }

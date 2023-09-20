@@ -144,6 +144,28 @@ public class DoublyLL {
         temp.next = node;
         size++;
     }
+
+
+    // delete item by its value
+    public int delete(int value) {
+        if (head == null) {
+            System.out.println("Please enter new elements first!");
+            return -1;
+        }
+        if (head.value == value) {
+            head = head.next;
+            head.prev = null;
+        }
+
+        Node node = find(value);
+        assert node != null;
+        if(node.prev != null) {
+            node.prev.next = node.next;
+        }
+        if(node.prev == null)
+            node.next.prev = node.prev;
+        return node.value;
+    }
     private static class Node {
         int value;
         Node next;
