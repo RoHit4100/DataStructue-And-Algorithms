@@ -202,6 +202,29 @@ public class LL {
         // in the end just return the new LL second node.
         return ansHead.next;
     }
+
+
+    // linked list cycle present or not.(fast and slow pointer method)
+    // leetcode solution.
+    private boolean hasCycle(Node head) {
+        // take two pointer fast and slow
+        // at start they both will point at the head
+        Node slow = head;
+        Node fast = head;
+        // travers till fast && fast.next != null, if any of the current value becomes null then break the loop
+        while (fast != null && fast.next != null) {
+            // now move by 1 node
+            slow = slow.next;
+            // move fast by 2 node
+            fast = fast.next.next;
+            // check whether fast and slow are at same node or not.
+            if (fast.value == slow.value)
+                // if they are same node then return true, means cycle is present
+                return true;
+        }
+        // if null is encountered by fast or fast.next means cycle is not present then return false.
+        return false;
+    }
     private static class Node{
         private final int value;
         private Node next;
