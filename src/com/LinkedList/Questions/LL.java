@@ -252,6 +252,55 @@ public class LL {
         }
         return 0;
     }
+
+
+
+    // Start of the LL cycle.
+    private Node detectCycle(Node head) {
+        /*
+            to solve this question we have to do 3 steps,
+                1. find the length of the cycle
+                2. move slow ahead by length of cycle times.
+                3. move slow and fast one by one, they will meet at the start.
+         */
+
+        Node fast = head;
+        Node slow = head;
+        int length = 0;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) {
+                // find length of the cycle and break out of the loop
+                do{
+                    slow = slow.next;
+                    length++;
+                }while (fast != slow);
+                break;
+            }
+        }
+        // if length of the cycle is 0 then return null
+        if(length == 0){
+            return null;
+        }
+        // now reassign the fast and slow pointers by head.
+        fast = head;
+        slow = head;
+        // move slow till length of cycle times in the LL.
+        while (length > 0) {
+            slow = slow.next;
+            // decrement the length at each iteration.
+            length--;
+        }
+
+        // now move fast and slow ahead by one, at some point they will meet, and that will be the starting node of the cycle.
+        while (fast != slow) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+
+        return slow;
+    }
     private static class Node{
         private final int value;
         private Node next;
