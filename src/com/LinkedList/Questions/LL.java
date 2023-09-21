@@ -298,9 +298,59 @@ public class LL {
             fast = fast.next;
             slow = slow.next;
         }
-
+        // now return any node as both are pointing to the same node.
         return slow;
     }
+
+
+    // happy number problem.
+    private boolean isHappy(int n) {
+        /*
+            To solve this question we have to first understand what is happy number
+            A happy number is a number defined by the following process:
+
+                1. Starting with any positive integer, replace the number by the sum of the squares of its digits.
+                2.Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which
+                 does not include 1.
+                3. Those numbers for which this process ends in 1 are happy.
+
+
+            checkout this link,
+            https://leetcode.com/problems/happy-number/solutions/3767573/easy-java-solution-two-pointers-floyd-s-tortoise-and-hare-detailed-explanation/
+         */
+        int slow = n;
+        int fast = n;
+        // while loop is not used here because initially slow and
+        // fast pointer will be equal only, so the loop won't run.
+        do{
+            // slow moving one step ahead and fast moving two steps ahead
+            slow = findSquareSum(slow);
+            fast = findSquareSum(findSquareSum(fast));
+        }while (slow != fast);
+        // if a cycle exists, then the number is not a happy number
+        // then fast and slow will have a value other than 1
+        return slow == 1;
+    }
+
+    private int findSquareSum(int n) {
+        // take sum initially 0
+        int sum = 0;
+        // run loop till number is greater than 0
+        // e.g. 4 / 10 = 0.4
+        while (n > 0) {
+            // take remainder of number
+            int rem = n % 10;
+            // add square that of that remainder into previous sum
+            sum += rem * rem;
+            // now divide that number by 10.
+            // e.g. 14/ 10 = 1
+            n /= 10;
+        }
+        // return sum at the end.
+        return sum;
+    }
+
+
     private static class Node{
         private final int value;
         private Node next;
