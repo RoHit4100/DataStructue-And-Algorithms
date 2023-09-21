@@ -1,8 +1,8 @@
 package com.LinkedList.Questions;
 
 public class LL {
-    private Node head;
-    private Node tail;
+    private ListNode head;
+    private ListNode tail;
     private int size;
 
     LL() {
@@ -11,7 +11,7 @@ public class LL {
 
     public void insertFirst(int value) {
         // first we create a new node
-        Node newNode = new Node(value);
+        ListNode newNode = new ListNode(value);
         // assign the current head of the link list to newNodes next, therefore current head will become the next node of the linked list
         newNode.next = head;
         // now update the head's value, assign head to newNode.
@@ -26,7 +26,7 @@ public class LL {
 
     public void insertLast(int value){
         // first create the new node with given value
-        Node node = new Node(value);
+        ListNode node = new ListNode(value);
         // check whether the tail is null or not, means whether list is empty or not
         if (tail == null) {
             // if empty then call the insertFirst method
@@ -47,12 +47,12 @@ public class LL {
         head = insertRec(index, value, head);
     }
 
-    private Node insertRec(int index, int value, Node current) {
+    private ListNode insertRec(int index, int value, ListNode current) {
         // check till index becomes 0
         if (index == 0) {
             // then create a temp node which will consist of the given value.
             // the next of the newly created node will be the previous node's next which is pass given to function call
-            Node temp = new Node(value, current);
+            ListNode temp = new ListNode(value, current);
             // after creating increment the size of the LL by one
             size++;
             // In the end just return temp node.
@@ -73,7 +73,7 @@ public class LL {
     }
 
     public void display() {
-        Node temp = head;
+        ListNode temp = head;
         while (temp != null) {
             System.out.print(temp.value + " -> ");
             temp = temp.next;
@@ -85,7 +85,7 @@ public class LL {
 
     // remove duplicates from sorted LL
     public void removeDup() {
-        Node temp = head;
+        ListNode temp = head;
         while (temp.next != null) {
             if (temp.next.value == temp.value) {
                 temp.next = temp.next.next;
@@ -98,14 +98,14 @@ public class LL {
     }
 
     // Leet code submission ans
-    private Node deleteDuplicates(Node head) {
+    private ListNode deleteDuplicates(ListNode head) {
         // check whether the list is empty or not
         if(head == null){
             // return null
             return null;
         }
         // create new temporary node which will point location as head variable.
-        Node node = head;
+        ListNode node = head;
         // run this loop until current node's next element became null
         while (node.next != null) {
             // check whether the current node's value == next node's value.
@@ -128,9 +128,9 @@ public class LL {
     public static LL mergeList(LL firstListHead, LL secondListHead) {
         // create first temp node to traverse through first LL
         // assign first LL head as first.
-        Node first = firstListHead.head;
+        ListNode first = firstListHead.head;
         // assign second LL head as second
-        Node second = secondListHead.head;
+        ListNode second = secondListHead.head;
 
         // create new LL which will contain our answer or merge LL
         LL newList = new LL();
@@ -166,11 +166,11 @@ public class LL {
     }
 
     // leetcode solution for merge two sorted list
-    private Node mergeTwoLists(Node list1, Node list2) {
+    private ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         // store head of the ans list to return at the end
-        Node ansHead = new Node();
+        ListNode ansHead = new ListNode();
         // now make head and tail same, because empty LL has head and tail at the same point
-        Node tail = ansHead;
+        ListNode tail = ansHead;
         // run till any of the head becomes null
         while (list1 != null && list2 != null) {
             // check whether value of first head is less than another head.
@@ -206,11 +206,11 @@ public class LL {
 
     // linked list cycle present or not.(fast and slow pointer method)
     // leetcode solution.
-    private boolean hasCycle(Node head) {
+    private boolean hasCycle(ListNode head) {
         // take two pointer fast and slow
         // at start they both will point at the head
-        Node slow = head;
-        Node fast = head;
+        ListNode slow = head;
+        ListNode fast = head;
         // travers till fast && fast.next != null, if any of the current value becomes null then break the loop
         while (fast != null && fast.next != null) {
             // now move by 1 node
@@ -228,9 +228,9 @@ public class LL {
 
 
     // length of the cycle.
-    private int lengthOfCycle(Node head) {
-        Node slow = head;
-        Node fast = head;
+    private int lengthOfCycle(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
         while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
@@ -256,7 +256,7 @@ public class LL {
 
 
     // Start of the LL cycle.
-    private Node detectCycle(Node head) {
+    private ListNode detectCycle(ListNode head) {
         /*
             to solve this question we have to do 3 steps,
                 1. find the length of the cycle
@@ -264,8 +264,8 @@ public class LL {
                 3. move slow and fast one by one, they will meet at the start.
          */
 
-        Node fast = head;
-        Node slow = head;
+        ListNode fast = head;
+        ListNode slow = head;
         int length = 0;
         while (fast != null && fast.next != null) {
             slow = slow.next;
@@ -352,9 +352,9 @@ public class LL {
 
 
     // middle of the list
-    private Node findMiddle(Node head) {
-        Node slow = head;
-        Node fast = head;
+    private ListNode findMiddle(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
         // run this loop until fast reaches to its end or fast != null
         while(fast != null && fast.next != null){
             // move slow ahead by 1
@@ -366,18 +366,18 @@ public class LL {
         // e.g. if A is running 2 times faster than B, then when A reach to end that time B will be at middle.
         return slow;
     }
-    private static class Node{
+    private static class ListNode {
         private final int value;
-        private Node next;
+        private ListNode next;
 
-        private Node() {
+        private ListNode() {
             this.value = 0;
         }
-        private Node(int value) {
+        private ListNode(int value) {
             this.value = value;
         }
 
-        private Node(int value, Node next) {
+        private ListNode(int value, ListNode next) {
             this.value = value;
             this.next = next;
         }
