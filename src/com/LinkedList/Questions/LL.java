@@ -351,6 +351,21 @@ public class LL {
     }
 
 
+    // middle of the list
+    private Node findMiddle(Node head) {
+        Node slow = head;
+        Node fast = head;
+        // run this loop until fast reaches to its end or fast != null
+        while(fast != null && fast.next != null){
+            // move slow ahead by 1
+            slow = slow.next;
+            // move fast ahead by 2
+            fast = fast.next.next;
+        }
+        // return slow, as when fast is reach to end then slow will at the mid.
+        // e.g. if A is running 2 times faster than B, then when A reach to end that time B will be at middle.
+        return slow;
+    }
     private static class Node{
         private final int value;
         private Node next;
