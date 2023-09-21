@@ -164,10 +164,51 @@ public class LL {
         // at the end just return the new LL.
         return newList;
     }
+
+    // leetcode solution for merge two sorted list
+    private Node mergeTwoLists(Node list1, Node list2) {
+        // store head of the ans list to return at the end
+        Node ansHead = new Node();
+        // now make head and tail same, because empty LL has head and tail at the same point
+        Node tail = ansHead;
+        // run till any of the head becomes null
+        while (list1 != null && list2 != null) {
+            // check whether value of first head is less than another head.
+            if (list2.value > list1.value) {
+                // in these case list1 has the lesser value than list2
+                // therefore make tail.next to list1
+                // to add any node to list we have to fix head location and add those nodes with the help of the tail
+                tail.next = list1;
+                // now move list1 head to ahead by making list1 = list.next
+                list1 = list1.next;
+                // now move tail ahead also.
+                tail = tail.next;
+            }else{
+                // do the same as previous case for list2
+                tail.next = list2;
+                list2 = list2.next;
+                tail = tail.next;
+            }
+        }
+
+        // check which list had been reach to its end
+        // add another list's remaining node to the newly created LL
+        // by assigning the current head location of that list to our tail.next
+        if (list1 != null) {
+            tail.next = list1;
+        }else{
+            tail.next = list2;
+        }
+        // in the end just return the new LL second node.
+        return ansHead.next;
+    }
     private static class Node{
         private final int value;
         private Node next;
 
+        private Node() {
+            this.value = 0;
+        }
         private Node(int value) {
             this.value = value;
         }
