@@ -218,12 +218,39 @@ public class LL {
             // move fast by 2 node
             fast = fast.next.next;
             // check whether fast and slow are at same node or not.
-            if (fast.value == slow.value)
+            if (fast == slow)
                 // if they are same node then return true, means cycle is present
                 return true;
         }
         // if null is encountered by fast or fast.next means cycle is not present then return false.
         return false;
+    }
+
+
+    // length of the cycle.
+    private int lengthOfCycle(Node head) {
+        Node slow = head;
+        Node fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) {
+                // after we found out that cycle is present in the LL.
+                // now initiate a counter variable to count the length.
+                int counter = 0;
+                // initially slow and fast are same, so we want to run this loop at-least once.
+                // therefore we will use do while loop.
+                do{
+                    // move slow node to next node.
+                    slow = slow.next;
+                    // increase the counter by 1;
+                    counter++;
+                }while (slow != fast);    // run this loop till slow again == fast.
+                // return the counter.
+                return counter;
+            }
+        }
+        return 0;
     }
     private static class Node{
         private final int value;
