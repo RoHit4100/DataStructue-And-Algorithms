@@ -9,7 +9,8 @@ public class QuestionsLL extends LL{
     // line 258 - find the starting point of the LL.
     // line 307 - happy number
     // line 354 - middle of the list.
-
+    // line 371 - reverse LL with recursion
+    // line 383 - in-place reversal of LL with iterative method.
     public static void main(String[] args) {
 
         // merge two sorted list

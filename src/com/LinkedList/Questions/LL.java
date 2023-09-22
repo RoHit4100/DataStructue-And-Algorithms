@@ -366,6 +366,56 @@ public class LL {
         // e.g. if A is running 2 times faster than B, then when A reach to end that time B will be at middle.
         return slow;
     }
+
+
+    // reversing the LL with recursion.
+    private void reverseRec(ListNode node) {
+        if (node == tail) {
+            head = tail;
+            return;
+        }
+        reverseRec(tail.next);
+        tail.next = node;
+        tail = node;
+        tail.next = null;
+    }
+
+    // inplace reverse LL, with iterative method and without tail.
+    private ListNode reverseLL(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        /*
+            To solve this question we have to take 3 pointer which will traverse the whole LL.
+                pointers will be,
+                    prev -> which will be null at the start of the loop
+                    present -> present node at which we are, which will be the head.
+                    next -> it will be the next node of the present node
+         */
+
+        // set the 2 pointer as written in previous comment
+        ListNode prev = null;
+        ListNode present = head;
+        ListNode next = present.next;
+        // run loop till present becomes null
+        while (present != null) {
+            // update the present node's next node as prev node.
+            present.next = prev;
+            // move prev ahead by one
+            prev = present;
+            // move present ahead by one
+            present = next;
+            // check whether next is null or not, to avoid null pointer exception
+            if(next != null)
+                next = next.next;
+        }
+        // when present becomes the null means we reach at the end of the list.
+        // then just simply return the prev node. because it will present at the last node. and make that node head.
+        return prev;
+    }
+
+
     private static class ListNode {
         private final int value;
         private ListNode next;
