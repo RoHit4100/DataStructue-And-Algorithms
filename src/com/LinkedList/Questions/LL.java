@@ -353,18 +353,22 @@ public class LL {
 
     // middle of the list
     private ListNode findMiddle(ListNode head) {
-        ListNode slow = head;
+        ListNode slow = null;
         ListNode fast = head;
         // run this loop until fast reaches to its end or fast != null
         while(fast != null && fast.next != null){
+            if (slow == null) {
+                slow = head;
+            }else
             // move slow ahead by 1
-            slow = slow.next;
+                slow = slow.next;
             // move fast ahead by 2
             fast = fast.next.next;
         }
         // return slow, as when fast is reach to end then slow will at the mid.
         // e.g. if A is running 2 times faster than B, then when A reach to end that time B will be at middle.
-        return slow;
+        assert slow != null;
+        return slow.next;
     }
 
 
@@ -465,38 +469,76 @@ public class LL {
                                therefore, newEnd.next = present
 
          */
-        ListNode prev = null;
+        ListNode prevOfPresent = null;
         ListNode present = head;
         ListNode newEnd = null;
-        // skip till left
+        // skip till left - 1
         for (int i = 0; present != null && i < left - 1; i++) {
-            prev = present;
+            prevOfPresent = present;
             present = present.next;
         }
 
-        ListNode last = prev;
+        // save the previous node of box start
+        ListNode prevOfBoxStart = prevOfPresent;
+        // save the start node of the box, which is going to be end of the box
         newEnd = present;
         assert present != null;
         ListNode next = present.next;
 
+        // reverse between left and right, or reverse the given box
+        // length of the box = right - left + 1
         for (int i = 0; present != null && i < (right - left) + 1; i++) {
-            present.next = prev;
-            prev = present;
+            present.next = prevOfPresent;
+            prevOfPresent = present;
             present = next;
             if (next != null) {
                 next = next.next;
             }
         }
         // check whether left - 1 node is null or not, means whether left is head or not.
-        if(last != null){
-            last.next = prev;
+        if(prevOfBoxStart != null){
+            prevOfBoxStart.next = prevOfPresent;
         }else{
-            head = prev;
+            // if there is no node behind the box then make previous node of present node head.
+            head = prevOfPresent;
         }
-
+        // connect the box end node with next node of the box end.
         newEnd.next = present;
         return head;
     }
+
+    public void palindrome() {
+        System.out.println(isPalindrome(head));
+    }
+
+
+    // palindrome link list
+    private boolean isPalindrome(ListNode head) {
+        if (head == null || head.next == null) {
+            return true;
+        }
+        // to find whether the list is palindrome or not first we have find mid of the list then reverse list from that list
+        //      and check from start again.
+
+        // find the middle node of the LL.
+        ListNode mid = findMiddle(head);
+        // reverse the LL from mid. head of that list will be return by reverseLL method.
+        ListNode reverseHead = reverseLL(mid);
+        // run loop till any of the heads become null
+        while (head != null && reverseHead != null) {
+            // compare the value of both nodes
+            if (head.value != reverseHead.value) {
+                // if they mismatch means LL is not palindrome
+                return false;
+            }
+            // move ahead both heads.
+            head = head.next;
+            reverseHead = reverseHead.next;
+        }
+        // if loop never loop successfully runs till its end then return true.
+        return true;
+    }
+
     private static class ListNode {
         private final int value;
         private ListNode next;

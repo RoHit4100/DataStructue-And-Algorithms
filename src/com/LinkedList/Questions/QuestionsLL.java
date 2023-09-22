@@ -11,6 +11,8 @@ public class QuestionsLL extends LL{
     // line 354 - middle of the list.
     // line 371 - reverse LL with recursion
     // line 383 - in-place reversal of LL with iterative method.
+    // line 420 - reverse link list between the range.
+    // line 515 - check list is palindrome or not.
     public static void main(String[] args) {
 
         // merge two sorted list
@@ -23,12 +25,10 @@ public class QuestionsLL extends LL{
         LL second = new LL();
         second.insertLast(2);
         second.insertLast(3);
-        second.insertLast(16);
-        second.insertLast(19);
+        second.insertLast(3);
+        second.insertLast(2);
         second.display();
 
-        LL mergeList = LL.mergeList(first, second);
-        mergeList.display();
-
+        second.palindrome();
     }
 }
