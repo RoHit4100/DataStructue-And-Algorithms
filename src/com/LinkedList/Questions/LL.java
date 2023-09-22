@@ -416,6 +416,87 @@ public class LL {
     }
 
 
+    // reverse LL-II, reverse LL from given left indexes till right index.
+    private ListNode reverseBetween(ListNode head, int left, int right) {
+        if (head == null || head.next == null || left == right) {
+            return head;
+        }
+
+        /*  e.g.
+            1 -> [2 -> 5 -> 6] -> 7
+            I have to reverse from 2 till 6.
+
+            What do we require to reverse the box,
+                1: the element behind the right index, which is node = 1;
+                2: after reversing the box then we have to attach 2 to 7;
+                    means we require to store 2 node in some temp node, to connect that node after right
+                3: when we will reverse the box then our present element will be at 7, and prev node will be at 6.
+                    therefore we have to add that 6 to 1 node's next.
+                    but what if their no node present, means what if prev is null.
+                    then we have to make head = prev
+
+            Steps to solve this example is,
+                1. traverse till left - 1 by skipping every node.
+                    after this step we will get the prev node at left - 1,
+                    and present node will be at left index location.
+                    e.g. prev = 1 ---> we have to store this node in some temp node, because at the end we have to connect this node with last node
+                                        of the box, which after reversing going to be first node of the box.
+                         present = 2 ---> this node will be our new end of the box.
+
+                         store,
+                         newEnd = present
+                         left - 1 node = prev
+                2. now we will run for loop to reverse the given box, we will run for loop till
+                    --> right - left + 1
+                        e.g. 4 - 2 + 1 = 3 --> which is the length of the box.
+                3. after reversing the box we will get structure like this,
+                 ---->>>>       1   [6 -> 5 -> 2]  7
+                                here, connections are broken between the box starting and box ending.
+                                so we will connect those boxes with their respective next nodes.
+
+                                e.g. here, node having value 1 is store in, last temp node
+                                    therefore, last.next = prev
+                                                    as after reversing the present pointer will be at 7,
+                                                    and prev pointer will be at 6.
+
+                ---->>>>       1 -> [6 -> 5 -> 2]  7
+                               here, after connecting the last node with prev node we have to connect end of the box with
+                               node after the right index, which is going to be, present node pointer.
+                               therefore, newEnd.next = present
+
+         */
+        ListNode prev = null;
+        ListNode present = head;
+        ListNode newEnd = null;
+        // skip till left
+        for (int i = 0; present != null && i < left - 1; i++) {
+            prev = present;
+            present = present.next;
+        }
+
+        ListNode last = prev;
+        newEnd = present;
+        assert present != null;
+        ListNode next = present.next;
+
+        for (int i = 0; present != null && i < (right - left) + 1; i++) {
+            present.next = prev;
+            prev = present;
+            present = next;
+            if (next != null) {
+                next = next.next;
+            }
+        }
+        // check whether left - 1 node is null or not, means whether left is head or not.
+        if(last != null){
+            last.next = prev;
+        }else{
+            head = prev;
+        }
+
+        newEnd.next = present;
+        return head;
+    }
     private static class ListNode {
         private final int value;
         private ListNode next;
