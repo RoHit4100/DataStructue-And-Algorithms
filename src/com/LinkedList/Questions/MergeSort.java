@@ -94,13 +94,16 @@ class LLQ extends LL{
     }
 
     public ListNode middleNode(ListNode head) {
-        ListNode midPrev = null;
+        ListNode midPrev = null;  // initialize midPrev as slow pointer this pointer will remain always behind the mid.
+        // when head reaches to its end then break the loop
         while (head != null && head.next != null) {
-            midPrev = (midPrev == null) ? head : midPrev.next;
-            head = head.next.next;
+            midPrev = (midPrev == null) ? head : midPrev.next;  // check if midPrev is null or not, if null then assign head to it.
+                                            // if midPrev is not null then move midPrev by 1 node ahead,
+            head = head.next.next;  // move head 2 nodes ahead.
         }
-        ListNode mid = midPrev.next;
-        midPrev.next = null;
+        assert midPrev != null; // we believe that midPrev is not null after traversing through whole list.
+        ListNode mid = midPrev.next; // now create new middle node, assign the midPrev next node to it.
+        midPrev.next = null; // now disconnect the midPrev node from its LL.
         return mid;
     }
 
