@@ -1,11 +1,10 @@
 package com.LinkedList.Questions;
 
-import java.util.List;
-
-class LLQ extends LL{
+class LLQ{
     ListNode head;
     ListNode tail;
-    public void display(ListNode head) {
+    int size = 0;
+    public void display() {
         ListNode temp = head;
         while (temp != null) {
             System.out.print(temp.val + " -> ");
@@ -24,6 +23,7 @@ class LLQ extends LL{
         if (tail == null) {
             tail = head;
         }
+        size++;
     }
 
     public void insertLast(int value){
@@ -40,6 +40,7 @@ class LLQ extends LL{
         tail.next = node;
         // update the tail with newly created node.
         tail = node;
+        size++;
     }
 
     public ListNode sortList(ListNode head) {
@@ -107,6 +108,85 @@ class LLQ extends LL{
         return mid;
     }
 
+
+    // bubble sort.
+    public void bubbleSort() {
+        bubbleSort(size - 1, 0);
+    }
+
+    private void bubbleSort(int row, int col) {
+        // edge condition for recursive loop
+        if (row == 0) {
+            return;
+        }
+
+        /*
+            To perform bubble sort using recursion we consider each iteration as row, so the edge condition will be row == 0 then break.
+            in each iteration we will just increment our column by 1.
+            until we reach our row, which is initially going to be length - 1;
+         */
+        if (col < row) {
+            // take first node pointer
+            ListNode first = get(col);
+            // check whether the second node of the first pointer node is null or not.
+            if (first.next == null) {
+                // if that next element of the first is null then that means we are at on tail node. so return form that node.
+                return;
+            }
+            // take second pointer as next node of the first pointer node.
+            ListNode second = first.next;
+
+            // check whether the first node's value is greater than second node's value
+            if (first.val > second.val) {
+                // if first node has greater value then swap both of those node.
+                // there will be three cases to swap.
+
+                // first when we are going to be at head.
+                if (first == head) {
+                    // then make second node as head.
+                    head = second;
+                    // update first node's next with second node's next
+                    first.next = second.next;
+                    // now update second node's next as first node.
+                    second.next = first;
+                } else if (second == tail) { // there will be another case when we have to swap tail element with its previous element.
+                    // to swap we will require the previous element of the node which we are at now.
+                    // and that prev node will be present at current node - 1 location.
+                    ListNode prev = get(col - 1);
+                    // assign that previous node's next as the second node.
+                    prev.next = second;
+                    // update the tail as first.
+                    tail = first;
+                    // make tail's next node as null.
+                    tail.next = null;
+                    // update the second node's next as the new tail.
+                    second.next = tail;
+                } else { // now there will another swap condition when we are present at the middle of the list.
+                    // in this case also we require current node's previous node.
+                    ListNode prev = get(col - 1);
+                    // make prev node's next node as second.
+                    prev.next = second;
+                    // update first.next as second.next
+                    first.next = second.next;
+                    // update second.next as first.
+                    second.next = first;
+                }
+            }
+            // after swapping or without even swapping we have to move ahead by one at each time.
+            bubbleSort(row, col + 1);
+        } else {
+            // after completing each iteration now we have to move decrement the row by 1. as bubble sort check n - 1 times.
+            bubbleSort(row - 1, 0);
+        }
+    }
+
+    private ListNode get(int index) {
+        ListNode temp = head;
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+        return temp;
+    }
     public static class ListNode {
       private int val;
       private ListNode next;
@@ -115,7 +195,7 @@ class LLQ extends LL{
       private ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  }
 }
-public class MergeSort {
+public class Sort {
     public static void main(String[] args) {
         // merge two sorted list
         LLQ first = new LLQ();
@@ -125,11 +205,13 @@ public class MergeSort {
         first.display();
 
         LLQ second = new LLQ();
-        second.insertLast(223);
-        second.insertLast(3);
-        second.insertLast(1777);
-        second.insertLast(19);
+        second.insertFirst(223);
+        second.insertFirst(3);
+        second.insertFirst(1777);
+        second.insertFirst(19);
         second.display();
 
+        second.bubbleSort();
+        second.display();
     }
 }
