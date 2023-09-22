@@ -539,6 +539,48 @@ public class LL {
         return true;
     }
 
+
+    // reorder list
+    public void reorder() {
+        reorderList(head);
+    }
+    private void reorderList(ListNode head) {
+        /*
+            Input: head = [1,2,3,4,5]
+            Output: [1,5,2,4,3]
+         */
+
+        if (head == null || head.next == null) {
+            return;
+        }
+        // get the middle node of the LL
+        ListNode mid = findMiddle(head);
+        // take pointer for actual head of the LL
+        ListNode headFirst = head;
+        // take pointer for reverse list of the LL, head of the reverse list will be return by the reverseLL method.
+        ListNode headSecond = reverseLL(mid);
+        // run till any of the head becomes null
+        while (headFirst != null && headSecond != null) {
+            // now create a temp pointer which will store the next node of the headFirst node.
+            ListNode temp = headFirst.next;
+            // modify the headFirst node's next, update it to second head of the List.
+            headFirst.next = headSecond;
+            // now reassign the temp pointer to headFirst.
+            headFirst = temp;
+            /*
+                why temp pointer because,
+                            Input: head = [1,2,3,4,5]
+                            Output: [1,5,2,4,3]
+                            when 5 is connected to 1 then first head will point to 5.
+                            to avoid these we will store 1's next node which is 2 in temp
+                            and then reassign that node again to first head.
+             */
+            temp = headSecond.next;
+            headSecond.next = headFirst;
+            headSecond = temp;
+        }
+    }
+
     private static class ListNode {
         private final int value;
         private ListNode next;

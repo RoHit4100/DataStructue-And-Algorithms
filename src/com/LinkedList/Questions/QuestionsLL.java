@@ -13,6 +13,7 @@ public class QuestionsLL extends LL{
     // line 383 - in-place reversal of LL with iterative method.
     // line 420 - reverse link list between the range.
     // line 515 - check list is palindrome or not.
+    // line 547 - reorder list
     public static void main(String[] args) {
 
         // merge two sorted list
@@ -23,12 +24,13 @@ public class QuestionsLL extends LL{
         first.display();
 
         LL second = new LL();
+        second.insertLast(1);
         second.insertLast(2);
         second.insertLast(3);
-        second.insertLast(3);
-        second.insertLast(2);
+        second.insertLast(4);
+        second.insertLast(6);
         second.display();
 
-        second.palindrome();
+        second.reorder();
     }
 }
