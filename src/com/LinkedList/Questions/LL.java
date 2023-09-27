@@ -581,6 +581,98 @@ public class LL {
         }
     }
 
+
+    // reverse link list in k part
+    private ListNode reverseKGroup(ListNode head, int k) {
+        int length = findLength(head);
+        if(head == null || head.next == null || k % length == 0 || k <= 1){
+            return head;
+        }
+        /*
+            1 -> 2 -> 5 -> End
+            1 -> 2 -> 3 -> 4 -> 6 -> End
+            c  next
+          prev
+
+            c.next = next.next;
+            next.next = prev.next;
+            prev.next = next;
+            next = c.next;
+
+         */
+
+        ListNode current = head;
+        ListNode prev = null;
+
+        int count = length / k;
+        while (count > 0) {
+            ListNode last = prev;
+            ListNode newEnd = current;
+
+            assert current != null;
+            ListNode next = current.next;
+            for (int i = 0; current != null && i < k; i++) {
+                current.next = prev;
+                prev = current;
+                current = next;
+                if (next != null) {
+                    next = next.next;
+                }
+            }
+
+            if (last != null) {
+                last.next = prev;
+            } else {
+                head = prev;
+            }
+
+            newEnd.next = current;
+
+            prev = newEnd;
+            count--;
+        }
+        return head;
+    }
+
+    private int findLength(ListNode head) {
+        ListNode temp = head;
+        int length = 0;
+        while (temp != null) {
+            temp = temp.next;
+            length++;
+        }
+        return length;
+    }
+
+
+    // Rotate K times.
+    private ListNode rotateRight(ListNode head, int k) {
+        if (k <= 0 || head == null || head.next == null) {
+            return head;
+        }
+
+        // now get the last node of the list and the length of the LL
+        ListNode last = head;
+        int length = 1;
+        while (last.next != null) {
+            last = last.next;
+            length++;
+        }
+
+        // make the last node's next as head.
+        last.next = head;
+        int rotations = k & length;
+        int skip = length - rotations;
+        ListNode newLast = head;
+        for (int i = 0; i < skip - 1; i++) {
+            newLast = newLast.next;
+        }
+
+        head = newLast.next;
+        newLast.next = newLast;
+        return head;
+    }
+
     private static class ListNode {
         private final int value;
         private ListNode next;
